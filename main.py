@@ -45,7 +45,6 @@ def main():
     idea = random.choice(ideas_by_category[category])
     print(f"\n💡 Ваша идея в категории «{category}»: {idea}")
     
-    # Спрашиваем, хочет ли пользователь сохранить идею
     save_choice = input("\nХотите сохранить эту идею? (да/нет): ").strip().lower()
     if save_choice in ["да", "д", "yes", "y"]:
         save_idea(idea)
